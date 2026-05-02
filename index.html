@@ -60,7 +60,7 @@
       <div class="container site-header__inner">
         <nav class="navbar">
           <a class="brand" href="#home" aria-label="Ashwani Tripathi & Associates home">
-            <span class="brand-mark">
+            <span class="brand-mark" data-fallback="AT">
               <img src="images/logo.png" alt="Ashwani Tripathi &amp; Associates logo">
             </span>
             <span class="brand-copy">
@@ -130,10 +130,10 @@
           </div>
 
           <div class="hero__profile-card" data-reveal>
-            <div class="hero__portrait">
+            <div class="hero__portrait" data-fallback="AT">
               <img src="images/ashwani.jpg" alt="Advocate Ashwani Tripathi portrait">
             </div>
-            <div class="hero__seal">
+            <div class="hero__seal" data-fallback="AT">
               <img src="images/logo.png" alt="Ashwani Tripathi &amp; Associates seal logo">
             </div>
             <div class="hero__profile-copy">
@@ -525,8 +525,8 @@
               <p class="eyebrow eyebrow--compact">Newsletter</p>
               <h3>Stay updated with important legal insights.</h3>
               <p>
-                Subscribe for concise legal updates, practice notes, and litigation-focused reminders. This is a UI-only
-                subscription form for the current deployment.
+                Subscribe for concise legal updates, practice notes, and litigation-focused reminders captured through
+                the live backend.
               </p>
               <form id="newsletterForm" class="stack-form">
                 <label>
@@ -547,8 +547,8 @@
             <p class="eyebrow">Online Consultancy</p>
             <h2>Request a confidential legal consultation online.</h2>
             <p>
-              Share your basic details and matter type. The request is stored locally for dashboard review and can
-              also be forwarded instantly on WhatsApp for faster follow-up.
+              Share your basic details and matter type. The request is submitted to the backend dashboard and can also
+              be forwarded instantly on WhatsApp for faster follow-up.
             </p>
           </div>
 
@@ -560,7 +560,7 @@
                 <li>Submit your name, contact details, and matter summary.</li>
                 <li>Select the legal service relevant to your consultation request.</li>
                 <li>Use the WhatsApp prompt for immediate scheduling support.</li>
-                <li>Your request is also visible inside the admin dashboard on this device.</li>
+                <li>Your request is also visible inside the secure admin dashboard after submission.</li>
               </ul>
             </article>
 
@@ -611,10 +611,10 @@
         <div class="container">
           <div class="section-heading" data-reveal>
             <p class="eyebrow">Admin Dashboard</p>
-            <h2>Secure local access for publishing and lead tracking.</h2>
+            <h2>Secure admin access for publishing and lead tracking.</h2>
             <p>
-              The dashboard supports first-time admin setup, login persistence on this device, blog publishing, and
-              consultancy request review without breaking public-site performance.
+              The dashboard supports first-time admin setup, secure login, blog publishing, and consultancy request
+              review through the backend without breaking public-site performance.
             </p>
           </div>
 
@@ -623,7 +623,7 @@
               <div id="adminSetupBlock">
                 <p class="eyebrow eyebrow--compact">First-Time Setup</p>
                 <h3>Create Admin Access</h3>
-                <p>Set up local dashboard credentials for this device.</p>
+                <p>Create the first secure admin account for the dashboard.</p>
                 <form id="adminSetupForm" class="stack-form">
                   <label>
                     <span>Admin Email</span>
@@ -752,7 +752,7 @@
     <footer class="site-footer">
       <div class="container footer-grid">
         <div>
-          <span class="brand-mark brand-mark--footer">
+          <span class="brand-mark brand-mark--footer" data-fallback="AT">
             <img src="images/logo.png" alt="Ashwani Tripathi &amp; Associates footer logo">
           </span>
           <p class="footer-title">Ashwani Tripathi &amp; Associates</p>
